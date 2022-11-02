@@ -1,8 +1,15 @@
 // Code Keypad Component Here
+import react from "react";
 
 function Keypad (){
+
+    function typing(){
+        console.log('Entering password...');
+    }
     return (
-        <div></div>
+        <div>
+            <input onChange={typing} type="password" />
+        </div>
     )
 }
 
